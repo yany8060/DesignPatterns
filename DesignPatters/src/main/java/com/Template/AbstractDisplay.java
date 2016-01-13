@@ -12,7 +12,10 @@ public abstract class AbstractDisplay {
     public abstract void open();
     public abstract void print();
     public abstract void close();
+
+
     //抽象类实现的方法,final可以保证在子类不会被修改
+//    、、算法的不变的部分
     public final void display() {
         open();   //先open...
         for(int i=0; i < 5; i++) {  //反复输出5次
